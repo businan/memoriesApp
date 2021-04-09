@@ -4,6 +4,7 @@ const validatePost = require("../helpers/validation.js");
 
 const postController = {
   getPosts: async (req, res) => {
+    console.log('inside getpostmethod backend')
     try {
       const postMessages = await PostMessage.find();
 
