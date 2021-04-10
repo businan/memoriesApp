@@ -13,7 +13,6 @@ import { getPosts } from './actions/posts';
 
 
 const App = () => {
-  console.log('frontend app')
   const classes = useStyles();
   const dispatch = useDispatch();
   const [currentId, setCurrentId] = useState(null);
