@@ -9,7 +9,8 @@ import axios from "axios";
 // export const deletePost = (id) => axios.delete(`${url}/${id}`);
 // export const likePost = (id) => axios.patch(`${url}/${id}/likePost`);
 
-const API = axios.create({ baseURL: "http://localhost:5000" });
+// const API = axios.create({ baseURL: "http://localhost:5000" });
+const API = axios.create({ baseURL: "https://memories042021.herokuapp.com" });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("profile")) {
